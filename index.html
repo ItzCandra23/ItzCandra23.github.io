@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CandraWeb: Personal Website</title>
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+    <link rel="shortcut icon" href="./resources/icon.ico">
+    <link rel="stylesheet" href="./styles/style.css">
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+    <script src="./src/index.js"></script>
+    <script src="./src/home.js"></script>
+    <script src="./src/shop.js"></script>
+    <script src="./src/minigames.js"></script>
+    <script src="./src/gacor.js"></script>
+    <script src="./src/randomstiker.js"></script>
+</head>
+<body>
+    <!-- web-page -->
+    <div class="webpage"></div>
+
+    <!-- footer -->
+    <div class="footer">
+        <nav class="wrapper">
+            <div class="container">
+                <div class="brand">
+                    <h1>CandraWeb</h1>
+                    <p>Personal Website Milik ItzCandra23</p>
+                    <ul class="contact">
+                        <li>Discord: <a href="https://discord.com/users/822266948607148042">ItzCandra23#0001</a></li>
+                        <li>WhatsApp: <a href="https://wa.me/6283820587900">(+62) 838-2058-7900</a></li>
+                    </ul>
+                </div>
+                <div class="pages">
+                    <h2>Pages</h2>
+                    <ul>
+                        <li>
+                            <i class="bx bx-chevron-right"></i>
+                            <a onclick="renderHome()">Home</a>
+                        </li>
+                        <li>
+                            <i class="bx bx-chevron-right"></i>
+                            <a onclick="renderShop()">Shop</a>
+                        </li>
+                        <li>
+                            <i class="bx bx-chevron-right"></i>
+                            <a onclick="render(`aboutme`)">About</a>
+                        </li>
+                        <li>
+                            <i class="bx bx-chevron-right"></i>
+                            <a onclick="renderMiniGames()">Mini Games</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="links">
+                    <h2>Links</h2>
+                    <ul>
+                        <li>
+                            <i class="bx bx-chevron-right"></i>
+                            <a href="https://youtube.com/@itzcandra23">YouTube</a>
+                        </li>
+                        <li>
+                            <i class="bx bx-chevron-right"></i>
+                            <a href="https://instagram.com/@itzcandraa23">Instagram</a>
+                        </li>
+                        <li>
+                            <i class="bx bx-chevron-right"></i>
+                            <a href="https://discord.com/users/822266948607148042">Discord</a>
+                        </li>
+                        <li>
+                            <i class="bx bx-chevron-right"></i>
+                            <a href="https://github.com/ItzCandra23">Github</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="about">
+                    <h2>About</h2>
+                    <p>HMM</p>
+                </div>
+            </div>
+            <p class="copyright">Copyright © 2022-2023 CandraProject  |  All Rights Reserved</p>
+        </nav>
+    </div>
+
+    <!-- navigation bar -->
+    <div class="navbar">
+        <nav class="mobile">
+            <div class="brand">
+                <div class="title">CandraWeb</div>
+            </div>
+            <ul class="buttons">
+                <li class="home"><a onclick="renderHome()">Home</a></li>
+                <li class="shop"><a onclick="renderShop()">Shop</a></li>
+                <li class="about"><a onclick="render(`aboutme`)">About</a></li>
+                <li class="mini-projects"><a onclick="renderMiniGames()">Mini Games</a></li>
+            </ul>
+        </nav>
+        <nav class="wrapper">
+            <div class="brand">
+                <div class="title">CandraWeb</div>
+            </div>
+            <ul class="contents">
+                <li class="home"><a onclick="renderHome()">Home</a></li>
+                <li class="shop"><a onclick="renderShop()">Shop</a></li>
+                <li class="about"><a onclick="render(`aboutme`)">About</a></li>
+                <li class="mini-projects"><a onclick="renderMiniGames()">Mini Games</a></li>
+            </ul>
+            <div class="mobilemode" onClick="toggleMobile()"><i class="bx bx-list-ul"></i></div>
+        </nav>
+    </div>
+</body>
+</html>

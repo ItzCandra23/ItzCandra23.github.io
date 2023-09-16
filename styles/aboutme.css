@@ -1,0 +1,274 @@
+
+/* Homepage */
+
+.homepage {
+    width: 100%;
+    min-height: 110vh;
+    background-color: #3d3d3f;
+}
+
+.homepage img {
+    position: absolute;
+    width: 45%;
+    top: 10vh;
+    left: 50%;
+}
+
+.homepage .brand {
+    position: relative;
+    color: #fcfcfc;
+    top: 30vh;
+    width: 50%;
+    left: 5%;
+}
+
+.homepage .brand .title {
+    font-family: "Coves Bold";
+    font-size: 50px;
+    width: 80%;
+    text-shadow: 1px 1px 2px #4e0eff;
+}
+
+.homepage .brand .description {
+    font-family: "Coves Light";
+    margin-top: 15px;
+    font-size: larger;
+    width: 60%;
+}
+
+.homepage .button {
+    position: relative;
+    top: 35vh;
+    left: 6%;
+    font-family: "Coves Bold";
+    text-decoration: none;
+    font-size: large;
+    padding: 12px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 15px;
+    color: #ffffff;
+    background-color: #202020;
+    text-transform: uppercase;
+}
+
+.homepage .button:hover {
+    color: #252525;
+    outline-color: #363636;
+    background-color: #ffffff9a;
+}
+
+@media (max-width: 990px) {
+    .homepage .brand {
+        width: 80%;
+    }
+}
+
+@media (max-width: 620px) {
+    .homepage .brand {
+        width: 90%;
+        left: 7%;
+    }
+}
+
+@media (max-width: 515px) {
+    .homepage .brand .title {
+        font-size: 35px;
+    }
+
+    .homepage .button {
+        font-size: small;
+        padding: 10px;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+}
+
+@media (max-width: 450px) {
+    .homepage .brand {
+        width: 95%;
+        left: 5%;
+    }
+
+    .homepage .brand .description {
+        font-size: large;
+    }
+}
+
+@media (max-width: 325px) {
+    .homepage .brand .description {
+        width: 80%;
+    }
+}
+
+
+/* About */
+.aboutpage {
+    width: 100%;
+    height: auto;
+    background-color: #fcfcfc;
+}
+
+.aboutpage .title {
+    position: relative;
+    font-family: "Coves Bold";
+    font-size: 45px;
+    width: 70%;
+    top: 17px;
+    left: 25px;
+}
+
+.aboutpage .description {
+    position: relative;
+    color: #202020;
+    font-size: large;
+    font-family: "Coves Light";
+    width: 90%;
+    top: 20px;
+    left: 5%;
+}
+
+.aboutpage .detail {
+    position: relative;
+    padding: 10px;
+    width: 80%;
+    left: calc(10% - 10px);
+    top: 30px;
+    margin-bottom: 50px;
+    outline: 1px #4e0eff;
+    outline-style: solid;
+}
+
+.aboutpage .detail li {
+    position: relative;
+    color: #202020;
+    font-family: "Roboto Light";
+    font-size: larger;
+    top: 10px;
+    margin-bottom: 10px;
+    list-style-type: none;
+}
+
+.aboutpage .detail li span {
+    position: relative;
+    padding-right: 5px;
+    color: #951ce1;
+}
+
+@media (max-width: 450px) {
+    .aboutpage .description {
+        font-size: medium;
+    }
+
+    .aboutpage .detail li {
+        font-size: medium;
+    }
+}
+
+
+/* Skills */
+.skillspage {
+    width: 100%;
+    height: auto;
+    background-color: #66009c;
+}
+
+.skillspage .title {
+    position: relative;
+    font-family: "Coves Bold";
+    color: white;
+    font-size: 45px;
+    width: 70%;
+    top: 17px;
+    left: 25px;
+}
+
+.skillspage .description {
+    position: relative;
+    color: #e8e8e8;
+    font-size: large;
+    font-family: "Coves Light";
+    width: 90%;
+    top: 20px;
+    left: 5%;
+}
+
+.skillspage .contents {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skillspage .contents .card {
+    margin: 10px;
+}
+
+.skillspage .contents .card nav {
+    width: 150px;
+    height: 200px;
+}
+
+.skillspage .contents .card a {
+    text-decoration: none;
+}
+
+.skillspage .contents .card nav img {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.skillspage .contents .card .name {
+    position: relative;
+    color: white;
+    font-family: "Roboto Light";
+    top: -20px;
+    left: 20px;
+}
+
+.skillspage .contents .card nav:hover {
+    position: relative;
+    transition: 0.5s;
+    background-color: #1f1f1f45;
+    top: -5px;
+}
+
+.skillspage .language_ico {
+    position: relative;
+    margin-top: 50px;
+}
+
+.skillspage .language_ico h1 {
+    position: relative;
+    color: #e8e8e8;
+    font-family: "Roboto Small";
+    left: 20px;
+    width: 70%;
+}
+
+.skillspage .brand_ico {
+    position: relative;
+    margin-top: 50px;
+}
+
+.skillspage .brand_ico h1 {
+    position: relative;
+    color: #e8e8e8;
+    font-family: "Roboto Small";
+    left: 20px;
+    width: 70%;
+}
+
+.skillspage .games_ico {
+    position: relative;
+    margin-top: 50px;
+}
+
+.skillspage .games_ico h1 {
+    position: relative;
+    color: #e8e8e8;
+    font-family: "Roboto Small";
+    left: 20px;
+    width: 70%;
+}

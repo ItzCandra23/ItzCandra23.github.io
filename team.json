@@ -1,0 +1,36 @@
+[
+    {
+        "name": "Candra",
+        "role": "Founder",
+        "profile": "https://cdn.discordapp.com/avatars/822266948607148042/4bf4088c6601eb25b96cb414914b9ffa.png?size=4096&ignore=true).",
+        "social": [
+            {
+                "type": "instagram",
+                "url": "https://instagram.com/itzcandraa23"
+            },
+            {
+                "type": "github",
+                "url": "https://github.com/ItzCandra23"
+            },
+            {
+                "type": "discord",
+                "url": "https://discord.com/users/822266948607148042"
+            }
+        ]
+    },
+    {
+        "name": "Devan",
+        "role": "Developer",
+        "profile": "https://cdn.discordapp.com/avatars/1112242423364587570/b4d46bbebda78fa0c692dbe07955f0de.png?size=4096&ignore=true).",
+        "social": [
+            {
+                "type": "instagram",
+                "url": "https://instagram.com/itzcandraa23"
+            },
+            {
+                "type": "youtube",
+                "url": "https://youtube.com/@itzcandra23"
+            }
+        ]
+    }
+]

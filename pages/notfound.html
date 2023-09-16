@@ -1,0 +1,67 @@
+<body>
+    <style>
+        @keyframes rainbow {
+            0%, 100% {
+                color: #ff7e7e;
+            }
+            25% {
+                color: #e279ff;
+            }
+            50% {
+                color: #7e7bff;
+            }
+            75% {
+                color: #80ffa6;
+            }
+        }
+
+        /* Title */
+        .notfound {
+            display: flex;
+            background-color: #ffffff;
+            width: 100%;
+            height: 100vh;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .notfound .wrapper {
+            position: relative;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .notfound .title {
+            font-family: "Coves Bold";
+            font-size: 15vw;
+            background: linear-gradient(20deg, #ff962e, #2d37ff);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+
+        .notfound .description {
+            font-family: "Coves Light";
+            font-size: 2.7vw;
+            color: #919191;
+            text-align: center;
+        }
+
+        @media (max-width: 425px) {
+            .notfound .title {
+                font-size: 30vw;
+            }
+
+            .notfound .description {
+                font-size: 5.4vw;
+            }
+        }
+    </style>
+
+    <div class="notfound">
+        <nav class="wrapper">
+            <h1 class="title">404</h1>
+            <p class="description">Web Page Tidak Ditemukan!</p>
+        </nav>
+    </div>
+</body>

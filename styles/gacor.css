@@ -1,0 +1,53 @@
+
+.gacor {
+    width: 100%;
+    background: linear-gradient(to right bottom, #a200ff, #1500ff)
+}
+
+.gacor .wrapper {
+    padding-top: 70px;
+    justify-content: center;
+    text-align: center;
+}
+
+.gacor h1 {
+    color: #ffffff;
+    font-family: "Coves Bold";
+    font-size: 30px;
+    padding: 10px;
+}
+
+.gacor ul {
+    padding: 10px;
+    list-style: none;
+}
+
+.gacor ul li {
+    font-family: "Roboto Medium";
+    font-size: 30px;
+    color: #f6ff00;
+}
+
+.gacor .reaksiku h3 {
+    padding: 10px;
+    font-family: "Roboto Small";
+    color: aliceblue;
+    font-size: 20px;
+}
+
+.gacor .reaksiku img {
+    width: 170px;
+    height: 170px;
+    object-fit: cover;
+}
+
+.gacor button {
+    margin-top: 10px;
+    margin-bottom: 50px;
+    font-family: "Coves Bold";
+    font-size: 25px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-color: #1500ff;
+    background-color: greenyellow;
+}

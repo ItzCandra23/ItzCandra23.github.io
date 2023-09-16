@@ -1,0 +1,211 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300&display=swap');
+
+.homepage {
+    width: 100%;
+    background-color: #0b0b1d;
+}
+
+.homepage .title {
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 30px;
+}
+
+.homepage .title h1 {
+    color: #f2f2f2;
+    font-family: "Roboto";
+    font-size: 30px;
+}
+
+.homepage .title p {
+    color: #cdcdcd;
+    font-family: "Barlow";
+    font-size: 18px;
+}
+
+/* Welcome */
+.homepage .welcome {
+    position: relative;
+    width: 90%;
+    left: 5%;
+}
+
+/* Welcome Slide */
+.homepage .welcome .slider {
+    position: relative;
+    left: 5%;
+    width: 90%;
+}
+
+.homepage .welcome .slide-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+.homepage .welcome .slider .slides {
+	display: flex;
+	aspect-ratio: 16 / 9;
+	overflow-x: auto;
+	scroll-snap-type: x mandatory;
+	scroll-behavior: smooth;
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+}
+
+.homepage .welcome .slider .slides::-webkit-scrollbar {
+	display: none;
+}
+
+.homepage .welcome .slider .slides img {
+    width: 100%;
+	scroll-snap-align: start;
+	object-fit: cover;
+}
+
+.homepage .welcome .slider .slidenav {
+    display: flex;
+    position: absolute;
+    justify-content: space-between;
+    width: 100%;
+    top: calc(100% / 2);
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.homepage .welcome .slider .slidenav a {
+    cursor: pointer;
+    -webkit-user-select: none;
+    user-select: none;
+    padding: 10px;
+    color: white;
+    background-color: #0000000a;
+    transition: 0.7s ease;
+    opacity: 30%;
+}
+
+.homepage .welcome .slider .slidenav a:hover {
+    background-color: #0000002d;
+    opacity: 80%;
+}
+
+.homepage .welcome .slider .slidenav .prev {
+    position: relative;
+    left: 20px;
+}
+
+.homepage .welcome .slider .slidenav .next {
+    position: relative;
+    right: 20px;
+}
+
+
+
+/* Team */
+.homepage .teams {
+    position: relative;
+    width: 90%;
+    left: 5%;
+}
+
+.homepage .teams .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.homepage .teams .card {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.homepage .teams .card nav {
+    width: 200px;
+    height: 270px;
+    background-color: #171857;
+}
+
+.homepage .teams .card nav img {
+    position: relative;
+    width: 200px;
+    height: 210px;
+    object-fit: cover;
+}
+
+.homepage .teams .card .contact {
+    transition: 0.5s;
+    opacity: 0;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    background-color: #08088c7d;
+    top: -32px;
+}
+
+.homepage .teams .card .contact li {
+    padding-top: 4px;
+    padding-bottom: 2px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.homepage .teams .card .contact i {
+    font-size: 20px;
+    color: #eaeaea;
+}
+
+.homepage .teams .card .contact i:hover {
+    transition: 1s;
+    color: red;
+}
+
+.homepage .teams .card nav:hover .contact {
+    opacity: 1;
+}
+
+.homepage .teams .card .team {
+    position: relative;
+    top: -25px;
+    text-align: center;
+}
+
+.homepage .teams .card .team h2 {
+    color: #eaeaea;
+    font-family: "Roboto";
+    font-size: 23px;
+}
+
+.homepage .teams .card .team h4 {
+    color: silver;
+    font-family: "Barlow";
+    font-size: 14px;
+}
+
+@media (max-width: 320px) {
+    
+    .homepage .teams .card nav {
+        width: 100px;
+        height: 170px;
+    }
+
+    .homepage .teams .card nav img {
+        width: 100px;
+        height: 110px;
+    }
+
+    .homepage .teams .card .team {
+        top: -18px;
+    }
+
+    .homepage .teams .card .team h2 {
+        font-size: 16px;
+    }
+
+    .homepage .teams .card .team h4 {
+        font-size: 10px;
+    }
+}

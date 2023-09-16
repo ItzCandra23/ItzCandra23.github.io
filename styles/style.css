@@ -1,0 +1,310 @@
+@font-face {
+    font-family: "Roboto";
+    src: url(../resources/fonts/Roboto/Roboto-Regular.ttf);
+}
+@font-face {
+    font-family: "Roboto Light";
+    src: url(../resources/fonts/Roboto/Roboto-Light.ttf);
+}
+@font-face {
+    font-family: "Roboto Small";
+    src: url(../resources/fonts/Roboto/Roboto-Thin.ttf);
+}
+@font-face {
+    font-family: "Roboto Medium";
+    src: url(../resources/fonts/Roboto/Roboto-Medium.ttf);
+}
+@font-face {
+    font-family: "Roboto Large";
+    src: url(../resources/fonts/Roboto/Roboto-Black.ttf);
+}
+
+@font-face {
+    font-family: "Coves Bold";
+    src: url(../resources/fonts/Coves/CovesBold.otf);
+}
+@font-face {
+    font-family: "Coves Light";
+    src: url(../resources/fonts/Coves/CovesLight.otf);
+}
+@font-face {
+    font-family: "Open Sans";
+    src: url(../resources/fonts/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf);
+}
+@font-face {
+    font-family: "SHOWG";
+    src: url(../resources/fonts/SHOWG.TTF);
+}
+@font-face {
+    font-family: "Squealer";
+    src: url(../resources/fonts/Squealer.ttf);
+}
+
+
+*, body {
+    margin: 0;
+    padding: 0;
+    font-size: "Roboto";
+}
+
+.webpage embed {
+    width: 100%;
+    height: 100%;
+}
+
+.navbar {
+    display: flex;
+    font-family: "Coves Light";
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    top: 0px;
+    left: 0px;
+    transition: top 0.3s
+}
+
+.navbar.hidden {
+    top: -100px;
+}
+
+.navbar .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    color: #0ef0ce;
+}
+
+.navbar .brand {
+    display: flex;
+    position: relative;
+    width: 50px;
+    left: 55px;
+}
+
+.navbar .brand .title {
+    -webkit-user-select: none;
+    user-select: none;
+    font-family: "Coves Bold";
+    position: relative;
+    top: 2px;
+    font-size: 35px;
+}
+
+.navbar .brand .title:hover {
+    transition: 1s;
+    color: #3ad425;
+}
+
+.navbar .contents {
+    display: flex;
+    position: relative;
+    right: 50px;
+    list-style: none;
+}
+
+.navbar .contents li {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.navbar .contents li a {
+    -webkit-user-select: none;
+    user-select: none;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 3px;
+    border-radius: 3%;
+    border-bottom: 2px solid transparent;
+}
+
+.navbar .contents li a:hover {
+    cursor: default;
+    transition: 1s;
+    color: #f200ff;
+    border-bottom: 2px solid;
+}
+
+.navbar .mobilemode {
+    display: none;
+    position: relative;
+    padding: 2px;
+    right: 20px;
+    font-size: 25px;
+    border-radius: 10%;
+}
+
+.navbar .mobile {
+    display: none;
+}
+
+.navbar .mobilemode:hover {
+    background-color: rgba(56, 56, 56, 0.401);
+    transition: 0.5s;
+}
+
+@media only screen and (max-width: 600px) {
+    .navbar .brand {
+        width: 30px;
+        left: 30px;
+    }
+
+    .navbar .brand .title {
+        position: relative;
+        top: 5px;
+        font-size: 20px;
+    }
+
+    .navbar .brand .icon {
+        position: relative;
+        top: 2px;
+        width: 25px;
+    }
+
+    .navbar .contents {
+        display: none;
+    }
+
+    .navbar.toggle .brand {
+        opacity: 0;
+    }
+
+    .navbar .mobilemode {
+        display: block;
+    }
+
+    .navbar.toggle .mobile {
+        display: flex;
+        height: 100vh;
+        width: 500px;
+        background-color: rgba(135, 135, 135, 0.75);
+    }
+
+    .navbar.toggle .mobile .buttons {
+        position: absolute;
+        top: 15vh;
+        left: 20px;
+        list-style: none;
+    }
+
+    .navbar.toggle .mobile .buttons li {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    .navbar.toggle .mobile .buttons li a {
+        font-size: 20px;
+        border-radius: 5px;
+        padding: 10px;
+        padding-left: 40px;
+        padding-right: 40px;
+        text-decoration: none;
+        color: white;
+    }
+
+    .navbar.toggle .mobile .logo {
+        display: flex;
+        position: absolute;
+        top: 1vh;
+        left: 20px;
+    }
+
+    .navbar.toggle .mobile .logo .icon {
+        width: 35px;
+    }
+
+    .navbar.toggle .mobile .logo .title {
+        position: relative;
+        font-family: "Coves Bold";
+        font-size: 25px;
+        top: 7px;
+    }
+}
+
+/* Footer */
+
+.footer {
+    color: white;
+    background-color: #12102a;
+    width: 100%;
+}
+
+.footer .wrapper {
+    position: relative;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    width: 90%;
+    left: 5%;
+}
+
+.footer .container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer .container div  {
+    position: relative;
+    width: 270px;
+    padding: 10px;
+}
+
+.footer .container div h2 {
+    position: relative;
+    left: 5px;
+    color: #e8e8e8;
+    font-family: "Coves Bold";
+}
+
+.footer .container div ul {
+    list-style-type: none;
+    padding-top: 10px;
+}
+
+.footer .container ul li {
+    color: red;
+    padding: 10px;
+}
+
+.footer .container li a {
+    font-family: "Coves Light";
+    cursor: pointer;
+    color: silver;
+    text-decoration: none;
+}
+
+.footer .container li a:hover {
+    transition: 0.7s;
+    color: red;
+}
+
+.footer .container div h1 {
+    position: relative;
+    font-size: 30px;
+    left: 3px;
+    font-family: "Coves Bold";
+}
+
+.footer .container div p {
+    font-family: "Roboto Light";
+    font-size: 15px;
+    color: #dbdbdb;
+    padding-top: 20px;
+}
+
+.footer .container div .contact {
+    list-style-type: none;
+    padding-top: 25px;
+}
+
+.footer .container .contact li {
+    font-family: "Roboto Medium";
+    color: #d5d5d5;
+    padding: 2px;
+}
+
+.footer .copyright {
+    padding-top: 20px;
+    font-size: 14px;
+    font-family: "Roboto Small";
+    color: #e1e1e1;
+}
