@@ -28,16 +28,16 @@
     src: url(../resources/fonts/Coves/CovesLight.otf);
 }
 @font-face {
-    font-family: "Open Sans";
-    src: url(../resources/fonts/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf);
-}
-@font-face {
     font-family: "SHOWG";
     src: url(../resources/fonts/SHOWG.TTF);
 }
 @font-face {
     font-family: "Squealer";
     src: url(../resources/fonts/Squealer.ttf);
+}
+@font-face {
+    font-family: "Barlow";
+    src: url(../resources/fonts/Barlow-Regular.ttf);
 }
 
 
@@ -72,7 +72,7 @@
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    color: #0ef0ce;
+    color: #f200ff;
 }
 
 .navbar .brand {
@@ -121,7 +121,7 @@
 .navbar .contents li a:hover {
     cursor: default;
     transition: 1s;
-    color: #f200ff;
+    color: #0ef0ce;
     border-bottom: 2px solid;
 }
 
@@ -305,6 +305,6 @@
 .footer .copyright {
     padding-top: 20px;
     font-size: 14px;
-    font-family: "Roboto Small";
+    font-family: "Barlow";
     color: #e1e1e1;
 }
