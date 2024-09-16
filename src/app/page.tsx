@@ -19,7 +19,7 @@ async function HomePage() {
                         <hr className="w-36 my-5 border-txt-2" />
                         <p className="font-mono max-w-[90%] text-txt-1 text-sm sm:text-base md:max-w-[70%]">I am a <span className="text-indigo-400">Freelance Programmer</span>, focused on <span className="text-txt-0">Fullstack, Frontend and Backend development</span>. Im also a <span className="text-txt-0">Native App Developer and UI/UX Designer</span></p>
                         <div className="max-[320px]:ml-0 mt-5 ml-1 sm:ml-7">
-                            <Link href="/#projects" className="transition ease-in-out bg-opacity-60 bg-bg-0 hover:bg-txt-1 text-txt-1 hover:text-bg-0 hover:text-opacity-80 rounded-lg max-[320px]:mx-1 mx-2 max-[320px]:px-3 px-4 sm:px-6 py-2 text-base font-semibold tracking-widest">Projects</Link>
+                            <Link href="/projects" className="transition ease-in-out bg-opacity-60 bg-bg-0 hover:bg-txt-1 text-txt-1 hover:text-bg-0 hover:text-opacity-80 rounded-lg max-[320px]:mx-1 mx-2 max-[320px]:px-3 px-4 sm:px-6 py-2 text-base font-semibold tracking-widest">Projects</Link>
                             <Link href="/#contact" className="transition ease-in-out border-opacity-80 border-2 hover:bg-bg-2 border-txt-1 text-txt-1 rounded-lg max-[320px]:mx-1 mx-2 max-[320px]:px-2 px-3 sm:px-5 py-1 text-base font-semibold tracking-widest">Contacts</Link>
                         </div>
                     </div>
@@ -47,7 +47,7 @@ async function HomePage() {
                         <hr className="w-full h-0 border-slate-700" />
                         <hr className="w-full h-0 border-slate-700" />
                         <hr className="w-full h-0 border-slate-700" />
-                        <Link href="/contacts" className="mx-3 uppercase font-covesbold text-sm md:text-xl tracking-wider transition bg-txt-2 hover:bg-opacity-30 hover:text-txt-0 text-backgroundPrimary px-3 py-1">Contacts</Link>
+                        <Link href="/#contacts" className="mx-3 uppercase font-covesbold text-sm md:text-xl tracking-wider transition bg-txt-2 hover:bg-opacity-30 hover:text-txt-0 text-backgroundPrimary px-3 py-1">Contacts</Link>
                         <hr className="w-full h-0 border-slate-700" />
                     </div>
                     <ul className="flex flex-wrap list-none max-[425px]:justify-center">
