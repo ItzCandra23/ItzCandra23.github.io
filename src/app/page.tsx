@@ -33,7 +33,7 @@ async function HomePage() {
                     <hr className="w-full h-0 border-txt-0" />
                 </div>
                 <div className="w-[90%] mx-auto flex justify-center flex-wrap">
-                    { (await CandraProject.getProjects()).slice(0, 5).map((v, i) => <ProjectCard key={i} type={v.type} card="sm" href={v.href} name={v.name} src={v.image} />) }
+                    { (await CandraProject.getProjects()).slice(0, 4).map((v, i) => <ProjectCard key={i} type={v.type} card="sm" href={v.href} name={v.name} src={v.image} />) }
                 </div>
             </div>
             <div id="contact" className="bg-bg-0 flex w-full justify-center items-center">
